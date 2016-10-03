@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Landing Page - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">DANIE & DIXIE</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Examples</a>
+                    </li>
+                    <li>
+                        <a href="#services">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#contact">What to expect</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+
+    <div class="" style="padding-top:100px; padding-bottom:100px; min-height: 100%">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+
+                    <h1 class="text-center">Awesome, let's get started!</h1>
+                    <p class="lead text-center">Let's get you an awesome horse portrait.</p>
+                </div>
+            </div>
+            <div class="row">
+                <section id="step1">
+                    <div class="col-lg-5 col-lg-offset-4">
+                        <h3>Step 1:</h2>
+                            <form action="#section2">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required placeholder="Email">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" required> It's ok that Danie & Dixie emails instructions to me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg">Continue</button>
+
+                            </form>
+                    </div>
+                </section>
+                <section id="step2" style="display:none">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <h3>Step 2:</h2>
+                            <h3>The poster</h3>
+                            <div class="row">
+                                <div class="col-lg-8">
+
+                                    <p class="lead">Yes, I would like to buy a beautiful poster of my horse, designed by an artist, created
+                                        using a high quality 180g matt paper.</p>
+                                    <p class="lead">I understand that I will be able to<br /><strong>see a copy of the artwork</strong> before
+                                        it's printed.</p>
+                                    <p>Size: 50x70cm (27.5 x 19.7 inches)</p>
+
+                                    <p>Shipping: Free world wide</p>
+                                    <p>Price: $299</p>
+
+                                    <button type="submit" id="step2-next" class="btn btn-success btn-lg">Continue</button>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>Example:</p>
+                                    <img src="img/dog1.png" style="box-shadow:0 10px 10px rgba(0,0,0,.4)" width=200 alt="">
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <section id="step3" style="display:none">
+                    <div class="col-lg-12 text-center">
+                        <h3>Thank you!</h3>
+                        <p>We will email further instructions to you!</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+
+    <script>
+        $().ready(function () {
+
+            $("#step1 form").on("submit", function () {
+                // mixpanel
+
+                $("#step1").slideUp();
+                $("#step2").slideDown();
+            });
+
+            $("#step2-next").on("click", function () {
+
+                $("#step2").slideUp();
+                $("#step3").slideDown();
+            });
+
+        });
+    </script>
+    <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
