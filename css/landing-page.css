@@ -113,7 +113,7 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
-.input[type=email] {
+input[type=email] {
     font-size:16px;
 }
 
