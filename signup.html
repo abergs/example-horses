@@ -134,9 +134,10 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script src="js/polyfiller.js">
+    <script src="js/polyfiller.js"></script>
     
     <script>
+    webshim.setOptions('basePath', '/js/shims/'); 
         webshim.polyfill('forms');
         $().ready(function () {
 
