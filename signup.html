@@ -139,11 +139,14 @@
     <script>
         $().ready(function () {
 
-            $("#step1 form").on("submit", function () {
+            $("#step1 form").on("submit", function (e) {
                 // mixpanel
 
                 $("#step1").slideUp();
                 $("#step2").slideDown();
+                e.preventDefault();
+                return false;
+
             });
 
             $("#step2-next").on("click", function () {
