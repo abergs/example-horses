@@ -113,6 +113,10 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
+.input[type=email] {
+    font-size:16px;
+}
+
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
