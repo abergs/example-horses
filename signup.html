@@ -134,9 +134,10 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-
+    <script src="js/polyfiller.js">
+    
     <script>
+        webshim.polyfill('forms');
         $().ready(function () {
 
             $("#step1 form").on("submit", function (e) {
