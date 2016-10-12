@@ -189,7 +189,8 @@ track("Viewed signup step 1");
 
                 $("#pricing").text(pricing);
                 var email = $("#email").val();
-                mixpanel.identify(email);
+                mixpanel.alias(email);
+                //mixpanel.identify(email);
                 mixpanel.people.set({
                     "$created": new Date(),
                     "$email": email
